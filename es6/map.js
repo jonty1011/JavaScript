@@ -26,7 +26,30 @@ console.log(ages.filter((age)=> age >= 18));*/
 
 //Find()
 
-const ages =[3,10,5,7,15,19,21,24,25];
+/*consoleconst ages =[3,10,5,7,15,19,21,24,25];
 
-console.log(ages.find((age)=>age>18));
+console.log(ages.find((age)=>age>18));*/
 
+const users = [
+  { firstname: "John", lastname: "Doe", age: 26 },
+  { firstname: "Jane", lastname: "Smith", age: 75 },
+  { firstname: "Mike", lastname: "Johnson", age: 50 },
+  { firstname: "Emily", lastname: "Davis", age: 26 },
+];
+
+/*const output = users.reduce((acc,curr)=>{
+  if(acc[curr.age]){
+   acc[curr.age] = ++acc[curr.age];
+  }
+  else{
+    acc[curr.age] = 1
+  }
+  return acc;
+},{})
+
+console.log(output);*/
+
+//const output = users.filter((x)=> x.firstname && x.age<30)
+const output = users.filter((x)=> x.age<30)
+.map((x)=> x.firstname);
+console.log(output);
