@@ -62,11 +62,48 @@ z();*/
 
 //print 1-5 after every one second
 
-function x() {for(let i=1; i<=5;i++){
+/*function x() {for(let i=1; i<=5;i++){
 setTimeout(()=>{
     console.log(i);
 },i*1000)
 }
 }
-x();
+x();*/
+
+function x(){
+    var a = 10;
+    function y() {
+        console.log(a);
+    }
+    return y;
+}
+
+var z = x();
+console.log(z);
+
+// asked question
+/*let a = 10;
+let b = 20;
+
+function test() {
+   let a = 30;
+   let b = 40;
+    console.log(a,b);
+}
+
+test();
+console.log(a,b);*/
+
+/*function z() {
+    var b =900;
+    function x() {
+        var a = 10;
+        function y() {
+          console.log(a,b);
+        }
+       y();
+    }
+    x();
+}
+z();*/
 
