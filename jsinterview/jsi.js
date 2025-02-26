@@ -230,6 +230,97 @@ console.log(delete age); */
 const data = getData();
 data.then(data => console.log(data));*/
 
+//reduce function 
+
+/*let arr = [1,2,3,4,5];
+
+let result = arr.reduce((curr , acc)=>{
+    return acc<=curr
+},0);
+
+console.log(result);*/
+
+//console.log(![]); // OUTPUT--> false
+
+//string without inbuit function
+
+/*let str = "Jonty";
+let newStr = "";
+for(let i=str.length-1; i>=0; i--){
+    newStr += str[i];
+}
+console.log(newStr);*/
+
+/*const arr = ["Jonty", "Rajat", "Moli"];
+
+const [a,b,c] = arr
+console.log(a,b,c);*/
+ 
+/*const obj1 = {name:"Jonty" ,age:22};
+const obj2 = {name:"Rajat" ,age:32 };
+
+console.log(obj1 ,obj2);*/
+
+/*let x = '{ "b": 1, "c": 2 }';
+let y = JSON.parse(x);
+console.log(typeof y);*/
+
+/*const arr = [1, 2, 2, 3, 4, 4, 5];
+let uniqueArr = [...new Set(arr)];
+console.log(uniqueArr);*/
+
+/*const arr = [1, 2, 2, 3, 4, 4, 5];
+let uniqueArr = arr.filter((ele, index,arr)=> arr.indexOf(ele)===index)
+console.log(uniqueArr);*/
+
+/*const arr = [1, 2, 2, 3, 4, 4, 5];
+
+const maxNumber = arr.reduce((max,num)=>(num > max ? num :max),0);
+const minNumber = arr.reduce((min , num)=>(num < min ? num:min));
+
+console.log(maxNumber);
+console.log(minNumber);*/
+
+/*let n ="20";
+console.log(n + 1);
+console.log(++n);
+console.log(n++);*/
+
+/*console.log("2" + 1+1);
+console.log(2 + 1 +"1");*/
+
+/*const JS = "brknheart";
+
+if(0 === 1){
+    JS ="money"
+}
+console.log(JS);*/
+
+// function which return even and odd
+
+/*function checkNumber(a){
+    if(a%2 ===0){
+        return "Even";
+    }else{
+        return "Odd";
+    }
+}
+console.log(checkNumber(5));*/
+
+// write a function which return smallest among three
+function smallest(a,b,c){
+    if(a<b && a<c){
+        return a;
+    }else if(b<a && b<c){
+        return b;
+    }else if(c<a && c<b){
+        return c;
+    }
+
+}
+console.log(smallest(1,4,2));
+
+ 
 
 
 

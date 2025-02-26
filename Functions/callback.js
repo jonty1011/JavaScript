@@ -1,4 +1,4 @@
-setTimeout(function(){
+/*setTimeout(function(){
     console.log("timer");
     
 },5000);
@@ -10,4 +10,5 @@ y();
 x(function y(){
     console.log("y");
     
-})
+})*/
+
